@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+    html{
+        color-scheme: dark !important;
+    }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: green transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip2{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(6, 45, 68);
+    border-radius: .3rem;
+    position: relative;
+    /* box-shadow: 0 0 10px black; */
+    /* border: 1px solid black; */
+    z-index: 4;
+    /* overflow: hidden; */
+  
+    
+}
+
+.tooltip2::after{
+    content: '';
+    border-width: 10px;
+    border-color: transparent transparent rgb(6, 45, 68);
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-55%,0%);
+    /* transform: rotate(45deg); */
+    /* z-index: 10; */
+    /* border: 1px solid black; */
+    /* box-shadow: 0 0 5px; */
+
+    
+
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Top Tooltip w/ Bottom Arrow</h2>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<div class="tooltip2">
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 14:29:28 GMT -->
+</html>
+
+
